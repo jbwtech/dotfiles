@@ -1,0 +1,8 @@
+[github]
+[user]
+	name = Brent Williams
+	email = jbwtech@gmail.com
+[push]
+	default = simple
+[credential]
+	helper = store
