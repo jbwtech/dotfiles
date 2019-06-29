@@ -10,3 +10,6 @@ fi
 
 # User specific aliases and functions
 
+if [[ $TERM = "screen" ]]; then
+    PROMPT_COMMAND=""
+fi
