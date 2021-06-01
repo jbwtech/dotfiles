@@ -2,7 +2,7 @@ Any stored credentials/tokens in encrypted files use the password for the servic
 
 Example, to decrypt:
 
-openssl aes256 -d -in filename.enc -out filename.txt
+gpg2 -d <filename>.asc   -or-   gpg2 -d <filename>.gpg
 
 Then enter the decryption password when prompted.
 
