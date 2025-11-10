@@ -3,4 +3,3 @@ alias ll='ls -l'
 alias lld='ls -ld'
 alias llz='ls -lZ'
 alias lla='ls -la'
-
