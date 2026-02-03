@@ -1,3 +1,5 @@
+alias ls='/bin/ls --color=auto'
 alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -lA
+alias lld='ls -ld'
+alias llz='ls -lZ'
+alias lla='ls -la'

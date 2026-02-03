@@ -6,5 +6,5 @@ set shiftwidth=4
 set smartindent
 set ruler
 set nocompatible
-colorscheme desert
+syntax on
 filetype plugin indent on
