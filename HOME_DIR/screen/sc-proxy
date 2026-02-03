@@ -1,0 +1,13 @@
+sessionname proxy
+screen -t LOG1 ssh -t proxy1 sudo tail -F /var/log/nginx/reverse-lite.log
+screen -t LOG2 ssh -t proxy2 sudo tail -F /var/log/nginx/reverse-lite.log
+
+select 0
+
+split -h
+wrap off
+
+focus down
+select 1
+wrap off
+

@@ -1,0 +1,10 @@
+sessionname dbs2
+screen -t PROXY1 ssh -t proxy1 htop
+screen -t PROXY2 ssh -t proxy2 htop
+
+select 0
+split -v
+
+focus right
+select 1
+focus left

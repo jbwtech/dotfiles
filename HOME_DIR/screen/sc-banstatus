@@ -1,0 +1,24 @@
+sessionname baninfo
+screen -t F2BLOG1 ssh -t proxy1 sudo tail -F /var/log/fail2ban.log
+screen -t F2BLOG2 ssh -t proxy2 sudo tail -F /var/log/fail2ban.log
+screen -t F2BSUMM1 ssh -t proxy1 sudo /root/bin/banlist-summary.sh
+screen -t F2BSUMM2 ssh -t proxy2 sudo /root/bin/banlist-summary.sh
+
+select 0
+
+split -v
+split -h
+resize -h 75%
+wrap off
+
+focus down
+select 1
+wrap off
+
+focus right
+split -h
+select 2
+
+focus down
+select 3
+

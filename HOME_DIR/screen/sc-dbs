@@ -1,0 +1,10 @@
+sessionname dbs 
+screen -t DATA5 ssh -t data5 podman exec -it mariadb mysql -u root -p -A 
+screen -t DATA4 ssh -t data4 mysql -u root -p -A
+
+select 0
+split -v
+
+focus right
+select 1
+focus left

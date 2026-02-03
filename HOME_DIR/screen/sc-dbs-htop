@@ -1,0 +1,10 @@
+sessionname dbs2
+screen -t DATA5 ssh -t data5 htop
+screen -t DATA4 ssh -t data4 htop
+
+select 0
+split -v
+
+focus right
+select 1
+focus left

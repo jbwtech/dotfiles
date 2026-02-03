@@ -1,0 +1,23 @@
+sessionname htop
+screen -t WEB1 ssh -t web1 htop
+screen -t WEB2 ssh -t web2 htop
+screen -t WEB3 ssh -t web3 htop
+screen -t WEB4 ssh -t web4 htop
+
+select 0
+
+split -v
+
+focus right
+split -h
+select 1
+
+focus left
+split -h
+
+focus down
+select 2
+
+focus right
+select 3
+

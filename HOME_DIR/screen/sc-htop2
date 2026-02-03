@@ -1,0 +1,23 @@
+sessionname htop2
+screen -t WEB5 ssh -t web5 htop
+screen -t WEB6 ssh -t web6 htop
+screen -t PROXY1 ssh -t proxy1 htop
+screen -t PROXY2 ssh -t proxy2 htop
+
+select 0
+
+split -v
+
+focus right
+split -h
+select 1
+
+focus left
+split -h
+
+focus down
+select 2
+
+focus right
+select 3
+
